@@ -22,4 +22,11 @@ class JenkinsServiceApplicationTests {
 		Assertions.assertEquals(1, 1);
 	}
 
+	@Test
+	void greetingMessage() {
+		String message="Greeting Message";
+		log.info("inside the greetingMessage");
+		Assertions.assertEquals(message, "Greeting Message");
+	}
+
 }
